@@ -2,7 +2,7 @@
 <html>
   <head>
     <script>
-    
+      Origin: https:URL;
       const ID1 = '2twhynojr3';
       const AREA = 'ap-northeast-1';
     //   ココ！
@@ -29,18 +29,12 @@
         console.log(data);
         buffers = [];
 
-    //    var buttonClick = () => {
-    //     var text = buffers.json(' ');
-    //     var data = JSON.stringify({
-    //         id : '1111111',
-    //         keys: text
-    //     });
-    //     console.log(data);
-    //     buffers = [];
+   
        
 
         // ココ！
         fetch(URL, {
+          mode: 'cors',
           method: method, // or 'PUT'
           headers: headers,
           body: data,
@@ -52,12 +46,6 @@
         .catch((error) => {
           console.error('Error:', error);
         });
-
-        // fetch(URL, {method, headers: headers, data})
-        // .then((res)=> res.json())
-        // .then(console.log)
-        // .catch(console.error);
-        // LOGS = [];
 
       };
 
